@@ -1,0 +1,224 @@
+/* Global 
+--------------------*/
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    color: #353434;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+img {
+    width: 300px;
+}
+
+a {
+    color: #ffE66D;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 100px;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+h1,
+h2 {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    margin: 0;
+}
+
+.item-details h3+p {
+    font-style: italic;
+}
+
+.item-details h3~p {
+    margin: 0;
+}
+
+.content-wrap {
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+    background: transparent;
+}
+
+
+/* Profile 
+--------------------*/
+
+header {
+    background-color: #3D405B;
+    color: white;
+}
+
+
+/* Projects 
+--------------------*/
+
+.projects {
+    background-color: #f7fff7;
+}
+
+.projects a {
+    color: #2f3061;
+}
+
+.projects .btn {
+    color: #f7fff7;
+    background-color: #2f3061;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.projects .btn:hover {
+    background-color: rgba(47, 48, 97, 80%);
+}
+
+.project-item {
+    overflow: hidden;
+}
+
+.project-item img {
+    size: 0.5;
+}
+
+.project-item h3 {
+    margin-top: 0;
+}
+
+.projects>.divider>section {
+    border-bottom: 1px dashed #343434;
+    padding: 25px 0;
+}
+
+.projects>.divider>section:last-of-type {
+    border-bottom: none;
+}
+
+
+/* Work Experience 
+--------------------*/
+
+.work-experience {
+    background-color: #f3c8ae;
+}
+
+.work-experience a {
+    color: #91811c;
+}
+
+.work-experience>.divider>section {
+    border-bottom: 1px dashed #343434;
+    padding: 25px 0;
+}
+
+.work-experience>.divider>section:last-of-type {
+    border-bottom: none;
+}
+
+
+/* Education 
+--------------------*/
+
+.education {
+    background-image: url('../images/pencil.jpg');
+    background-size: cover;
+    background-position: 90% 80%;
+    padding-bottom: 100px;
+}
+
+.education p {
+    width: 80%;
+}
+
+
+/* Contact Info 
+--------------------*/
+
+footer {
+    background-color: #343434;
+    color: #f7fff7;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-list a {
+    display: inline-block;
+    padding: 15px;
+}
+
+
+/* Responsive
+--------------------*/
+
+@media screen and (min-width:750px) {
+    .project-item .img-wrap {
+        height: 200px;
+        float: left;
+        margin-right: 20px;
+        overflow: hidden;
+    }
+    .job-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
+    header,
+    footer {
+        text-align: center;
+    }
+    .contact-list {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:749px) {
+    .project-item .img-wrap {
+        height: 200px;
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+    h1 {
+        font-size: 75px;
+        line-height: 0.9;
+        margin-bottom: 20px;
+    }
+    h2 {
+        line-height: 1;
+    }
+    .contact-list a {
+        padding: 5px;
+    }
+}
